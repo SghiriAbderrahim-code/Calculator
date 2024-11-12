@@ -1,0 +1,65 @@
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --c-back: rgb(255, 254, 254);
+  --c-text: rgb(5, 5, 5);
+  --c-hover: rgb(204, 203, 203);
+}
+body {
+  background-color: var(--c-back);
+  color: var(--c-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.contener {
+  width: 95vw;
+  height: 95vh;
+}
+
+.buttons {
+  height: 70%;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  padding: 10px;
+  gap: 10px;
+}
+.buttons div,
+.screen {
+  font-size: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.308),
+    inset 3px 3px 5px rgba(0, 0, 0, 0.308),
+    3px 3px 5px rgba(255, 255, 255, 0.349),
+    inset 3px 3px 5px rgba(255, 255, 255, 0.349);
+  text-shadow: 0 0 2px var(--c-text), 0 0 2px var(--c-text);
+}
+.equal {
+  background-color: rgba(255, 17, 0, 0.925);
+}
+.screen {
+  font-size: 40px;
+  cursor: default;
+  display: flex;
+  justify-content: end;
+  padding-right: 20px;
+  width: 100%;
+  height: 30%;
+}
+.buttons div:hover {
+  background-color: var(--c-hover);
+}
